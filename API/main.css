@@ -1,0 +1,264 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/*Font used for the title page*/
+@font-face {
+    font-family: w;
+    src: url(fonts/Braga.otf);
+}
+
+/*style for the whole site*/
+body {
+    font-family: 'IM Fell Double Pica SC', serif;
+    background-color: #000000;
+    color: #f8f0c6;
+}
+
+.wrapper {
+    display: flex;
+}
+
+/*style for the logo on the left*/
+.logo {
+    font-family: w;
+    font-weight: bold;
+    font-size: 25px;
+    cursor: pointer;
+}
+
+/*style for the menu bar in the header*/
+.nav { 
+    top: 0;
+    width: 100%;
+    display: flex;
+    position: fixed;
+    padding: 1.5rem 3rem;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 1000;
+}
+
+/*style for the moving animation in the header*/
+.nav span { 
+    height: 3px;
+    width: 50px;
+    bottom: 0;
+    position: absolute;
+    background: linear-gradient(90deg , transparent , rgb(211, 122, 189));
+    animation: span 4s infinite linear;
+}
+
+@keyframes span {
+    0%{
+        left: 0;
+        transform: translate(-100%);
+    }
+    100%{
+        left: 100%;
+        transform: translate(0%);
+    }
+}
+
+.navbar {
+    display: flex;
+    text-transform: uppercase;
+    font-weight: bold;    
+    gap: 2rem;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    color: rgb(228, 225, 199);
+    text-decoration: none;
+}
+
+/*style for the video background*/
+.video {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    position: relative;
+    z-index: -2;
+}
+
+/*style for the home page*/
+.home-txt {
+    position: absolute;
+    top: 0;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.title {
+    font-family: w;
+    width: 450px;
+    position: relative;
+    height: 110px;
+    overflow: hidden;
+}
+
+.bg {
+    font-size: 90px;
+}
+
+.up {
+    font-size: 25px;
+    height: 50px;
+}
+
+.left {
+    left: -35%;
+}
+
+.right {
+    top: 50px;
+    left: 85%;
+}
+
+.middle {
+    left: 8%;
+
+}
+
+.title span {
+    position: absolute;
+}
+
+/*style for the mid section of the site*/
+.mid-section {
+    top: 0;
+    height: 100vh;
+    width: 100%;
+    grid-template-columns: 4fr 1fr;
+    position: absolute;
+    display: grid;
+}
+
+.left-side {
+    padding: 5rem;
+    gap: 8rem;
+    justify-content: flex-end;
+    display: flex;
+    flex-direction: column;
+}
+
+.tv {
+    display: flex;
+    text-transform: capitalize;
+    font-family: w;
+}
+
+.bottom {
+    transform: translateY(70px);
+}
+
+.about-us {
+    max-width: 300px;
+}
+
+.about-us p {
+    text-align: right;
+    padding-bottom: 1rem;
+    line-height: 1.5;
+    opacity: 1;
+}
+
+.right-side {
+    width: 150px;
+    height: 150px;
+    margin: auto;
+    position: relative;
+}
+
+.right-side p {
+    top: 45%;
+    left: -15%;
+    font-size: 15px;
+    position: absolute;
+    text-transform: uppercase;
+}
+
+/*style for the activities section*/
+section {
+    width: 100vw;
+    flex-shrink: 0;
+    overflow: hidden;
+}
+
+.section {
+    background-color: #201f21f6;
+    padding: 7rem;
+}
+
+.section-container {
+    display: flex;
+    flex-direction: column;
+    gap: 10rem;
+}
+
+.column {
+    display: flex;
+    gap: 1.5rem;
+    position: relative;
+}
+
+.col img {
+    object-fit: cover;
+    width: 550px;
+    height: 400px;
+}
+
+.col-3 {
+    display: flex;
+    justify-content: center;
+    gap: 2.5rem;
+    flex-wrap: wrap;
+    flex: 4;
+}
+
+.col-1 {
+    margin: auto;
+    flex: 1.5;
+}
+
+.col-1 h1 {
+    font-family: w;
+    font-size: 100px;
+    text-transform: capitalize;
+    z-index: 100;
+    letter-spacing:3px;
+    opacity: .7;
+}
+
+.line {
+    height: 3px;
+    width: 150px;
+    background-color: #f8f0c6;
+    margin: 2rem 0;
+}
+
+.text-box p {
+    font-size: 18px;
+    line-height: 2;
+    padding-bottom: 5rem;
+    opacity: .7;
+}
+
+/*style for the footer*/
+footer {
+    background-color: #060421;
+    padding: 1.5rem 3rem;
+    border-top: 1px solid rgb(56, 53, 53);
+    text-align: center;
+    font-size: 25px;
+}

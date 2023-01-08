@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>✯ Midnight Hub ✯</title>
+    <link rel="stylesheet" href="main.css">
+    <link rel="shortcut icon" href="img/moon.png" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css2?family=IM+Fell+Double+Pica+SC&family=Indie+Flower&family=Press+Start+2P&family=Yeon+Sung&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <!--For the header and menu-->
+    <header>
+        <nav class="nav">
+            <span></span>
+            <div class="logo">真夜中</div>
+            <ul class="navbar">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Activities</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!--For the background music of the website-->
+    <audio loop autoplay>
+        <source src="img/audio.mp3" type="audio/mp3">
+    </audio>
+
+    <!--For the home page-->
+    <div class="wrapper">
+        <section class="video-section">
+            <div> 
+                <!--The background video for the homepage is looped-->
+                <video src="img/home.mp4" autoplay loop muted></video>
+            </div>
+
+            <!--The title text for the home page-->
+            <div class="home-txt">
+                <div class="title_txt">
+                    <div class="title up left">
+                        <span>真夜中</span>
+                    </div>
+                    <div class="title bg left">
+                        <span>The</span>
+                    </div>
+                    <div class="title bg middle">
+                        <span>Midnight</span>
+                    </div>
+                    <div class="title bg right">
+                        <span>Hub</span>
+                    </div>
+                </div>
+            </div>
+
+            <!--Upon scrolling a bit, the about page would be shown; it is still part of the home page-->
+            <div class="mid-section">
+                <div class="left-side">
+                    <div class="tv">
+                        <div class="bg">about</div>
+                        <div class="bg bottom">us?</div>
+                    </div>
+                    <div class="about-us">
+                        <p>
+                            Welcome to the Mayonaka Hub! How'd you find us? Let me guess. It's midnight, you can't sleep and you have nothing to do. 
+                        </p>
+                        <p>
+                            Explore the midnight hub. Who knows? Maybe you'll find something you'd like. Kill time until you pass out. Enjoy! ≧◉◡◉≦
+                        </p>
+                    </div>
+                </div>
+                <div class="right-side">
+                    <p>Scroll to explore</p>
+                </div>
+            </div>
+        </section>
+
+        <!--This main activities page-->
+        <section class="section">
+            <div class="section-container">
+                <div class="column box1">
+                    <div class="col-1">
+                        <h1>Paint</h1>
+                        <div class="line"></div>
+                        <div class="text-box">
+                            <p>
+                                Why don't you try out your creativity? Try doodling something. That might cure your boredom.
+                            </p>
+
+                            <!--Redirects the user to another page-->
+                            <p><a href="paint.html">Click here!</a></p>
+                        </div>
+                    </div>
+                    <div class="col col-3">
+                        <img src="img/1.gif">
+                    </div>
+                </div>
+                
+                <div class="column box2">
+                    <div class="col-1">
+                        <h1>Ribbit</h1>
+                        <div class="line"></div>
+                        <div class="text-box">
+                            <p>
+                                Ribbit! Try hopping onto this game. Maybe this would tire you out and finally make you sleep. Press space to start and UpArrow to jump!
+                            </p>
+
+                           <!--Redirects the user to another page-->
+                            <p><a href="game.html">Click here!</a></p>
+                        </div>
+                    </div>
+                    <div class="col col-3">
+                        <img src="img/bg.gif">
+                    </div>
+                </div>
+
+                <div class="column box3">
+                    <div class="col-1">
+                        <h1>Lullaby</h1>
+                        <div class="line"></div>
+                        <div class="text-box">
+                            <p>
+                                Cmon, still awake? Here, play this song. Maybe this would finally help you sleep. 
+                            </p>
+
+                           <!--Redirects the user to another page-->
+                            <p><a href="https://youtu.be/4GUtRFSMO5I">Click here!</a></p>
+                        </div>
+                    </div>
+                    <div class="col col-3">
+                        <img src="img/7.gif">
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <!--Footer of the website-->
+    <footer>Copyright © 2022 真夜中 ✯ Midnight Hub ✯ .</footer>
+</body>
+
+<!--Scripts used-->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.0/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollTrigger/1.0.5/ScrollTrigger.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/ScrollTrigger.min.js"></script>
+<script src="main.js"></script>
+</html>

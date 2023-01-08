@@ -1,0 +1,93 @@
+* {
+  padding: 0;
+  margin: 0;
+  font-family: 'Indie Flower', cursive;
+}
+
+body {
+  display: grid;
+  place-items: center;
+  height: 100vh;
+  background-color: #84cf7d;
+}
+
+/*setting the size and background of the game*/
+#game {
+  width: 700px;
+  height: 500px;
+  position: relative;
+  overflow: hidden;
+  border: 2px solid black;
+  background-image: url("img/bg.gif");
+  background-size: cover;
+}
+
+#game #frog {
+  height: 75px;
+  width: 75px;
+  bottom: 30px;
+  left: 30px;
+  position: absolute;
+  background-image: url("img/frog.png");
+  background-size: cover;
+}
+
+.frogAnimation {
+  animation: frogJump 0.5s linear infinite;
+}
+
+@keyframes frogJump {
+
+  0%,
+  100% {
+    bottom: 30px;
+  }
+  
+  45%,
+  55% {
+    bottom: 160px ;
+  }
+}
+
+#game #poop {
+  width: 125px;
+  height: 100px;
+  bottom: 20px;
+  right: -20px;
+  position: absolute;
+  background-image: url("img/poo.png");
+  background-size: cover;
+}
+
+.poopAnimation {
+  animation: poopAnimate 1s linear infinite;
+}
+
+@keyframes poopAnimate {
+  0% {
+    right: -125px;
+  }
+  100% {
+    right: 100%;
+  }
+}
+
+#score { 
+  height: auto;
+  width: auto;
+  position: absolute;
+  top: 20px;
+  right: 30px;
+  text-align: center; 
+  font-size: 30px;
+}
+
+#gameOver {
+  height: auto;
+  width: auto;
+  position: absolute;
+  font-size: 70px;
+  top: 50px;
+  left: 180px;
+  color: #2c4a24;
+}
